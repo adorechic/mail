@@ -19,7 +19,7 @@ module Mail
       end
 
       def self.encode(str)
-        [str.to_lf].pack("M").to_crlf
+        [str].pack("M").to_crlf
       end
 
       def self.cost(str)
